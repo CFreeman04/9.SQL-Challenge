@@ -1,4 +1,4 @@
 # Files to ignore
 
-keys.py
-gitignore
+passwords.py
+.gitignore
