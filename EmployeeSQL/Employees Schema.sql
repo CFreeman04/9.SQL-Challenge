@@ -54,7 +54,7 @@ ALTER TABLE ONLY employees
     ADD CONSTRAINT employees_fk FOREIGN KEY (emp_title) REFERENCES titles(title_id);
 	
 ALTER TABLE ONLY dept_employees
-    ADD CONSTRAINT dept_employees_ck PRIMARY Key (emp_no,dept_no),
+    ADD CONSTRAINT dept_employees_ck PRIMARY KEY (emp_no, dept_no),
     ADD CONSTRAINT dept_employees_fk1 FOREIGN KEY (emp_no) REFERENCES employees(emp_no),
     ADD CONSTRAINT dept_employees_fk2 FOREIGN KEY (dept_no) REFERENCES departments(dept_no);
 

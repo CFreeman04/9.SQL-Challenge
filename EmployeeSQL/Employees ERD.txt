@@ -5,13 +5,13 @@ dept_name VARCHAR
 
 DEPT_EMPLOYEES
 --
-emp_no INT FK >- EMPLOYEES.emp_no
-dept_no VARCHAR FK >- DEPARTMENTS.dept_no
+emp_no INT PK FK >- EMPLOYEES.emp_no
+dept_no VARCHAR PK FK >- DEPARTMENTS.dept_no
 
 DEPT_MANAGER
 ---
-dept_no VARCHAR FK >- DEPARTMENTS.dept_no
-emp_no int FK >- EMPLOYEES.emp_no
+dept_no VARCHAR PK FK >- DEPARTMENTS.dept_no
+emp_no int PK FK - EMPLOYEES.emp_no
 
 EMPLOYEES
 --
@@ -25,7 +25,7 @@ hire_date DATE
 
 SALARIES
 ----
-emp_no int UNIQUE FK >- EMPLOYEES.emp_no
+emp_no int PK FK - EMPLOYEES.emp_no
 salary DECIMAL 
 
 TITLES
